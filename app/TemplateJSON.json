@@ -1,0 +1,83 @@
+{
+  "$jason": {
+    "head": {
+      "title": "NAK Gemeindeinfo Gerlingen",
+      "description": "NAK Gemeindeinfo Gerlingen",
+      "icon": "https://github.com/tseiffert/GemeindeInfoGerlingen/blob/master/GemInfoLogoStripe.png",
+      "styles": {
+        "bold": {
+          "font": "HelveticaNeue-CondensedBold",
+          "size": "15"
+        }
+      }
+    },
+    "body": {
+      "header": {
+        "title": {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/tseiffert/GemeindeInfoGerlingen/blob/master/GemInfoLogoStripe.png",
+          "style": {
+            "width": "159",
+            "height": "28"
+          }
+        },
+        "style": {
+          "background": "rgb(87, 148, 202)",
+          "padding": "10",
+          "color": "#ffffff"
+        }
+      },
+      "sections": [
+        {
+          "items": [
+            {
+              "type": "label",
+              "text": "Read ProcessWire Blog",
+              "class": "bold",
+              "style": {
+                "padding": "20"
+              },
+              "href": {
+                "url": "https://raw.githubusercontent.com/NinjasCL/pw-app/master/blog.json"
+              }
+            },
+            {
+              "type": "label",
+              "text": "Read ProcessWire Weekly",
+              "class": "bold",
+              "style": {
+                "padding": "20"
+              },
+              "href": {
+                "url": "https://raw.githubusercontent.com/NinjasCL/pw-app/master/weekly.json"
+              }
+            },
+            {
+              "type": "label",
+              "text": "Read Latest Forum Posts",
+              "class": "bold",
+              "style": {
+                "padding": "20"
+              },
+              "href": {
+                "url": "https://raw.githubusercontent.com/NinjasCL/pw-app/master/forum.json"
+              }
+            },
+            {
+              "type": "label",
+              "text": "Made by Ninjas.cl",
+              "class": "bold",
+              "style": {
+                "padding": "20"
+              },
+              "href": {
+                    "url": "http://www.ninjas.cl",
+                    "view": "web"
+                  }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
