@@ -1,0 +1,208 @@
+{
+  "$jason": {
+    "head": {
+      "title": "NAK Gemeindeinfo Gerlingen-v3",
+      "description": "NAK Gemeindeinfo Gerlingen-V3",
+      "icon": "https://raw.githubusercontent.com/tseiffert/GemeindeInfoGerlingen/master/NAKLogo.png",
+      "offline": "false",
+      "styles": {
+        "bold": {
+          "font": "HelveticaNeue-CondensedBold",
+          "size": "15"
+        }
+      },
+      "actions": {
+        "$foreground": {
+          "type": "$reload"
+        },
+        "$pull": {
+          "type": "$flush",
+          "success": {
+            "type": "$reload"
+          }
+        },
+        "$load": {
+          "type": "$script.include",
+          "options": {
+            "items": [
+              {
+                "text": "var randomcolor = function() { return '#'+Math.floor(Math.random()*16777215).toString(16); }"
+              },
+              {
+                "text": "var today = function() {return today = ((new Date())/1000/60/60/24); }"
+              },
+              {
+                "text": "var MakeDateOK = function(date) {return date; }"
+              },
+              {
+                "text": "var MakeDateNOK3 = function() {return java.text.DateFormat.format(new Date());}"
+              },
+              {
+                "text": "var MakeDateNOK = function() {return d = new Date().toShortDateString();}"
+              },
+              {
+                "text": "var MakeDateNOK3 = function(date) {return Date.today().toShortDateString();}"
+              },
+              { "url": "https://cdnjs.cloudflare.com/ajax/libs/fecha/2.3.3/fecha.js" },
+              {
+                "type": "label",
+                "text": "var MakeDateNix = function(date) {return timestamp = java.sql.Timestamp('2020-01-23');}"
+              },
+              {"url": "file://DateTool.js"}
+            ]
+          },
+          "success": {
+            "trigger": "random"
+          },
+          "$load": {
+          "type": "$network.request",
+          "options": {
+            "url": "file://2020_02_Gerlingen.csv",
+            "data_type": "raw"
+          },
+          "success": {
+            "type": "$convert.csv",
+            "options": {
+              "data": "{{$jason}}"
+            },
+            "success": {
+              "type": "$render"
+            }
+          }
+        }
+      },
+      "data": {
+        "Termine": [
+          {
+            "dateD": "24",
+            "dateM" : "1",
+            "time": "19:00",
+            "text": "Probe der NAKaronies in Leonberg"
+          },
+          {
+            "dateD": "27",
+            "dateM" : "1",
+            "time": "10:00-14:00",
+            "text": "yesterday.."
+          },
+          {
+            "dateD": "28",
+            "dateM" : "1",
+            "time": "14:00",
+            "text": "TODAY"
+          },
+          {
+            "dateD": "29",
+            "dateM" : "1",
+            "time": "14:00",
+            "text": "Tomorrow"
+          },
+          {
+            "dateD": "30",
+            "dateM" : "1",
+            "time": "10:00",
+            "text": "FUTURE"
+          },
+          {
+            "dateD": "1",
+            "dateM" : "2",
+            "time": "10:00",
+            "text": "far FUTURE"
+          }
+        ]
+      },
+      "templates": {
+        "body": {
+          "header": {
+            "title": {
+              "type": "image",
+              "url": "https://raw.githubusercontent.com/tseiffert/GemeindeInfoGerlingen/master/GemInfoLogoStripeSmal.png",
+              "style": {
+                "width": "300",
+                "height": "42"
+              }
+            },
+            "style": {
+              "background": "#rgb(87, 148, 202)",
+              "color": "#FFFFFF"
+            }
+          },
+          "sections": [
+            {
+              "items": {
+                "{{#each Termine}}": {
+                  "type": "horizontal",
+                  "style": {
+                    "padding": "5",
+                    "spacing": "5"
+                  },
+                  "components": [
+                    {
+                      "type": "label",
+                      "class": "label_class",
+                      "text": "{{$root.GetDays(dateD,dateM)}}",
+                      "style": {
+                        "width": "20%",
+                        "color": "{{$root.GetColour(dateD,dateM)}}"
+                      }
+                    },
+                    
+                    {
+                      "type": "label",
+                      "class": "label_class",
+                      "text": "{{time}}",
+                      "style": {
+                        "width": "20%",
+                        "color": "{{$root.GetColour(dateD,dateM)}}"
+                      }
+                    },
+                    {
+                      "type": "label",
+                      "class": "label_class",
+                      "text": "{{text}}",
+                      "style": {
+                        "width": "50%",
+                        "color": "{{$root.GetColour(dateD,dateM)}}"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "footer": {
+            "tabs": {
+              "style": {
+                "background": "#FFFFFF",
+                "color": "rgba(87, 148, 202, 1)",
+                "color:disabled": "rgba(87, 148, 202, 0.5)"
+              },
+              "items": [
+                {
+                  "image": "https://raw.githubusercontent.com/tseiffert/GemeindeInfoGerlingen/master/icons8-eigenschaftszeit-32.png",
+                  "text": "Termine",
+                  "url": "https://raw.githubusercontent.com/tseiffert/GemeindeInfoGerlingen/master/TemplateJSON.json"
+                },
+                {
+                  "image": "https://raw.githubusercontent.com/tseiffert/GemeindeInfoGerlingen/master/icons8-phone-32.png",
+                  "text": "Telefon",
+                  "url": "https://raw.githubusercontent.com/tseiffert/GemeindeInfoGerlingen/master/Telefon.json"
+                },
+                {
+                  "image": "https://raw.githubusercontent.com/tseiffert/GemeindeInfoGerlingen/master/icons8-application-shield-32.png",
+                  "text": "Intern",
+                  "url": "https://raw.githubusercontent.com/tseiffert/GemeindeInfoGerlingen/master/Intern.json"
+                },
+                {
+                  "image": "https://raw.githubusercontent.com/tseiffert/GemeindeInfoGerlingen/master/icons8-info-32.png",
+                  "text": "Info",
+                  "url": "https://raw.githubusercontent.com/tseiffert/GemeindeInfoGerlingen/master/About.json"
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,221 @@
+{
+  "$jason": {
+    "head": {
+      "title": "NAK Gemeindeinfo Gerlingen",
+      "description": "NAK Gemeindeinfo Gerlingen",
+      "icon": "https://raw.githubusercontent.com/tseiffert/GemeindeInfoGerlingen/master/GemInfoLogoStripeSmal.png",
+      "offline": "false",
+      "styles": {
+        "bold": {
+          "font": "HelveticaNeue-CondensedBold",
+          "size": "15"
+        }
+      },
+      "actions": {
+        "$foreground": {
+          "type": "$reload"
+        }
+      }
+    },
+    "body": {
+      "header": {
+        "title": {
+          "type": "image",
+          "url": "https://raw.githubusercontent.com/tseiffert/GemeindeInfoGerlingen/master/GemInfoLogoStripeSmal.png",
+          "style": {
+            "width": "300",
+            "height": "42"
+          }
+        },
+        "style": {
+          "background": "rgb(87, 148, 202)",
+          "padding": "15",
+          "color": "#ffffff"
+        }
+      },
+      "sections": [
+        {
+          "items": [
+            {
+              "type": "label",
+              "text": "NAK Telefonkonferenz",
+              "class": "bold",
+              "size": "20",
+              "style": {
+                "padding": "10",
+                "background": "#F0F0F0"
+              }
+            },
+            {
+              "type": "label",
+              "text": "1. Rufnummer wählen:0711-20949079",
+              "class": "normal",
+              "style": {
+                "padding": "5"
+              }
+            },
+            {
+              "type": "label",
+              "text": "2. Konferenzraumnummer eingeben: 21272#",
+              "class": "normal",
+              "style": {
+                "padding": "5"
+              }
+            },
+            {
+              "type": "label",
+              "text": "3. Gemeinde PIN Gerlingen: 70839#",
+              "class": "normal",
+              "style": {
+                "padding": "5"
+              }
+            },
+            {
+              "type": "space",
+              "style": {
+                "height": "2"
+              }
+            },
+            {
+              "type": "label",
+              "text": "Notfallnummern wenn die Leitung besetzt ist: 0711-20528887 oder 089-14379502",
+              "class": "normal",
+              "style": {
+                "padding": "5"
+              }
+            },
+            {
+              "type": "vertical",
+              "style": {
+                "padding": "10",
+                "spacing": "5"
+              },
+              "components": [
+                {
+                  "type": "label",
+                  "class": "label_class",
+                  "text": "Falls die Gerlinger Konferenz gestört ist, hier die Einwahldaten der Ditzinger Konferenz:"
+                },
+                {
+                  "type": "label",
+                  "class": "label_class",
+                  "text": "Telefon 0711-20949079"
+                },
+                {
+                  "type": "label",
+                  "class": "label_class",
+                  "text": "Konferenzraum Ditzingen 35536#"
+                },
+                {
+                  "type": "label",
+                  "class": "label_class",
+                  "text": "PIN Ditzingen: 14725#"
+                }
+              ]
+            },
+            {
+              "type": "space",
+              "style": {
+                "height": "2"
+              }
+            },
+            {
+              "type": "vertical",
+              "style": {
+                "padding": "10",
+                "spacing": "5"
+              },
+              "components": [
+                {
+                  "type": "label",
+                  "class": "label_class",
+                  "text": "Telefonnnummer mit Pausenzeichen und Pineingaben. Am besten als Kontakt abspeichern."
+                },
+                {
+                  "type": "label",
+                  "class": "label_class",
+                  "text": "004971120949079;21272#;70839#"
+                }
+              ]
+            },
+            {
+              "type": "space",
+              "style": {
+                "height": "2"
+              }
+            },
+            {
+              "type": "button",
+              "text": "Konferenz anrufen",
+              "class": "bold",
+              "style": {
+                "color": "rgb(87, 148, 202)",
+                "font": "HelveticaNeue",
+                "size": "18"
+              },
+              "action": {
+                "type": "$href",
+                "options": {
+                  "url": "tel://004971120949079",
+                  "view": "app"
+                }
+              }
+            },
+            {
+              "type": "button",
+              "url": "https://github.com/tseiffert/GemeindeInfoGerlingen/blob/master/icons8-phone-40.png",
+              "style": {
+                "width": "100",
+                "height": "50",
+                "background": "#FFFFFF",
+                "color": "#rgb(87, 148, 202)",
+                "font": "HelveticaNeue",
+                "size": "12",
+                "corner_radius": "5"
+              },
+              "action": {
+                "type": "$href",
+                "options": {
+                  "url": "tel://004971120949079",
+                  "view": "app"
+                }
+              }
+            },
+            {
+              "type": "space",
+              "style": {
+                "height": "2"
+              }
+            }
+          ]
+        }
+      ],
+      "footer": {
+        "tabs": {
+          "style": {
+            "background": "#FFFFFF",
+            "color": "rgba(87, 148, 202, 1)",
+            "color:disabled": "rgba(87, 148, 202, 0.5)"
+          },
+          "items": [
+            {
+              "image": "https://raw.githubusercontent.com/tseiffert/GemeindeInfoGerlingen/master/icons8-eigenschaftszeit-32.png",
+              "text": "Termine",
+              "url": "https://raw.githubusercontent.com/tseiffert/GemeindeInfoGerlingen/master/TemplateJSON.json"
+            },
+            {
+              "image": "https://raw.githubusercontent.com/tseiffert/GemeindeInfoGerlingen/master/icons8-phone-32.png",
+              "text": "Telefon",
+              "url": "https://raw.githubusercontent.com/tseiffert/GemeindeInfoGerlingen/master/Telefon.json"
+            },
+            {
+              "image": "https://raw.githubusercontent.com/tseiffert/GemeindeInfoGerlingen/master/icons8-info-32.png",
+              "text": "Info",
+              "url": "https://raw.githubusercontent.com/tseiffert/GemeindeInfoGerlingen/master/About.json"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
