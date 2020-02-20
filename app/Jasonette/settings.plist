@@ -3,11 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>client_id</key>
-	<string></string>
-	<key>client_secret</key>
-	<string></string>
-	<key>url</key>
 	<string>https://raw.githubusercontent.com/tseiffert/GemeindeInfoGerlingen/master/TemplateJSON.json</string>
+	<key>client_secret</key>
+	<string>file://TemplateJSON.json</string>
+	<key>url</key>
+	<string>file://TemplateJSON.json</string>
 	<key>loading</key>
 	<false/>
 	<key>launch</key>

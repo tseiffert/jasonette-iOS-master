@@ -1,8 +1,8 @@
 {
   "$jason": {
     "head": {
-      "title": "NAK Gemeindeinfo Gerlingen-v3",
-      "description": "NAK Gemeindeinfo Gerlingen-V3",
+      "title": "NAK Gemeindeinfo Gerlingen-v4",
+      "description": "NAK Gemeindeinfo Gerlingen-V4",
       "icon": "https://raw.githubusercontent.com/tseiffert/GemeindeInfoGerlingen/master/NAKLogo.png",
       "offline": "false",
       "styles": {
@@ -25,7 +25,8 @@
             "type": "$script.include",
             "options": {
               "items": [
-                {"url": "file://DateTool.js"}
+                {"url": "file://DateTool.js"},
+                {"url": "file://Download.js"}
               ]
             },
             "success": {
@@ -35,183 +36,217 @@
       },
       "data": {
         "Termine": [
-            {
-              "Tag": 25,
-              "Monat": 1,
-              "Jahr": 2020,
-              "Stunde": 10,
-              "Minute": 0,
-              "Text": "Jugendchor in Ludwigsburg 10:00-14:00"
-            },
-          {
-            "Tag": 1,
-            "Monat": 2,
-            "Jahr": 2020,
-            "Stunde": 17,
-            "Minute": 0,
-            "Text": "Jugend-Fackelwanderung in Rutesheim"
-          },
-          {
-            "Tag": 2,
-            "Monat": 2,
-            "Jahr": 2020,
-            "Stunde": 9,
-            "Minute": 30,
-            "Text": "Gottesdienst Predigtgrundlage: Johannes 1,17 Kindergottesdienst in Heimerdingen Vorsonntagsschule"
-          },
-          {
-            "Tag": 6,
-            "Monat": 2,
-            "Jahr": 2020,
-            "Stunde": 20,
-            "Minute": 0,
-            "Text": "Gottesdienst in Ditzingen Predigtgrundlage: 3.Mose 25,35"
-          },
-          {
-            "Tag": 8,
-            "Monat": 2,
-            "Jahr": 2020,
-            "Stunde": 5,
-            "Minute": 30,
-            "Text": "Schneetag der Jugend in Balderschwang Treffpunkt: 5:30h Glaspalast Sindelfingen"
-          },
-          {
-            "Tag": 9,
-            "Monat": 2,
-            "Jahr": 2020,
-            "Stunde": 9,
-            "Minute": 30,
-            "Text": "Gottesdienst\nPredigtgrundlage: 1.Korinther 13, 13\nSonntags- und Vorsonntagsschule"
-          },
-          {
-            "Tag": 10,
-            "Monat": 2,
-            "Jahr": 2020,
-            "Stunde": 16,
-            "Minute": 0,
-            "Text": "Seniorenchorprobe in Leonberg"
-          },
-          {
-            "Tag": 10,
-            "Monat": 2,
-            "Jahr": 2020,
-            "Stunde": 20,
-            "Minute": 0,
-            "Text": "Jugendabend"
-          },
-          {
-            "Tag": 11,
-            "Monat": 2,
-            "Jahr": 2020,
-            "Stunde": 20,
-            "Minute": 0,
-            "Text": "Chorprobe in Ditzingen"
-          },
-          {
-            "Tag": 12,
-            "Monat": 2,
-            "Jahr": 2020,
-            "Stunde": 15,
-            "Minute": 0,
-            "Text": "Seniorentreffen"
-          },
-          {
-            "Tag": 13,
-            "Monat": 2,
-            "Jahr": 2020,
-            "Stunde": 20,
-            "Minute": 0,
-            "Text": "Gottesdienst in Ditzingen mit Bischof Bornhäußer Predigtgrundlage: 1. Mose 9,12-13"
-          },
-          {
-            "Tag": 15,
-            "Monat": 2,
-            "Jahr": 2020,
-            "Stunde": 10,
-            "Minute": 30,
-            "Text": "Jugendchorprobe in Fellbach"
-          },
-          {
-            "Tag": 16,
-            "Monat": 2,
-            "Jahr": 2020,
-            "Stunde": 9,
-            "Minute": 30,
-            "Text": "Gottesdienst Predigtgrundlage: Galater 5, 14 Sonntags- und Vorsonntagsschule"
-          },
-          {
-            "Tag": 16,
-            "Monat": 2,
-            "Jahr": 2020,
-            "Stunde": 10,
-            "Minute": 0,
-            "Text": "Jugendgottesdienst mit Apostel Loy in Fellbach"
-          },
-          {
-            "Tag": 18,
-            "Monat": 2,
-            "Jahr": 2020,
-            "Stunde": 20,
-            "Minute": 0,
-            "Text": "Chorprobe"
-          },
-          {
-            "Tag": 20,
-            "Monat": 2,
-            "Jahr": 2020,
-            "Stunde": 20,
-            "Minute": 0,
-            "Text": "Gottesdienst Predigtgrundlage:Römer 2, 4 Zum Gottesdienst ist die Gemeinde Ditzingen eingeladen"
-          },
-          {
-            "Tag": 21,
-            "Monat": 2,
-            "Jahr": 2020,
-            "Stunde": 19,
-            "Minute": 0,
-            "Text": "Probe der NAKaronies in Leonberg"
-          },
-          {
-            "Tag": 23,
-            "Monat": 2,
-            "Jahr": 2020,
-            "Stunde": 9,
-            "Minute": 30,
-            "Text": "Gottesdienst \nPredigtgrundlage: Matthäus 5, 44.45\nSonntags- und Vorsonntagsschule"
-          },
-          {
-            "Tag": 24,
-            "Monat": 2,
-            "Jahr": 2020,
-            "Stunde": 18,
-            "Minute": 0,
-            "Text": "Trauergesprächskreis in S-Zuffenhausen. Voranmeldung unter 07151/82380 oder 07234/1730"
-          },
-          {
-            "Tag": 25,
-            "Monat": 2,
-            "Jahr": 2020,
-            "Stunde": 14,
-            "Minute": 0,
-            "Text": "Seniorenwandern"
-          },
-          {
-            "Tag": 25,
-            "Monat": 2,
-            "Jahr": 2020,
-            "Stunde": 15,
-            "Minute": 0,
-            "Text": "Blutspendeaktion 15:00 bis 18:30 Uhr"
-          },
-          {
-            "Tag": 27,
-            "Monat": 2,
-            "Jahr": 2020,
-            "Stunde": 20,
-            "Minute": 0,
-            "Text": "Gottesdienst mit Apostel Loy Zum Gottesdienst ist die Gemeinde Ditzingen eingeladen."
-          }
-        ]
+              {
+                "Tag": 1,
+                "Monat": 2,
+                "Jahr": 2020,
+                "Stunde": 17,
+                "Minute": 0,
+                "Date": "Mi 1.Jan",
+                "Time": "17:00",
+                "Text": "Jugend-Fackelwanderung in Rutesheim"
+              },
+              {
+                "Tag": 2,
+                "Monat": 2,
+                "Jahr": 2020,
+                "Stunde": 9,
+                "Minute": 30,
+                "Date": "Do 2.Jan",
+                "Time": "09:30",
+                "Text": "Gottesdienst Predigtgrundlage: Johannes 1,17 Kindergottesdienst in Heimerdingen Vorsonntagsschule"
+              },
+              {
+                "Tag": 6,
+                "Monat": 2,
+                "Jahr": 2020,
+                "Stunde": 20,
+                "Minute": "00",
+                "Date": "Mo 6.Jan",
+                "Time": "20:00",
+                "Text": "Gottesdienst in Ditzingen Predigtgrundlage: 3.Mose 25,35"
+              },
+              {
+                "Tag": 8,
+                "Monat": 2,
+                "Jahr": 2020,
+                "Stunde": 5,
+                "Minute": 30,
+                "Date": "Mi 8.Jan",
+                "Time": "05:30",
+                "Text": "Schneetag der Jugend in Balderschwang Treffpunkt: 5:30h Glaspalast Sindelfingen"
+              },
+              {
+                "Tag": 9,
+                "Monat": 2,
+                "Jahr": 2020,
+                "Stunde": 9,
+                "Minute": 30,
+                "Date": "Do 9.Jan",
+                "Time": "09:30",
+                "Text": "Gottesdienst Predigtgrundlage: 1.Korinther 13, 13 Sonntags- und Vorsonntagsschule"
+              },
+              {
+                "Tag": 10,
+                "Monat": 2,
+                "Jahr": 2020,
+                "Stunde": 16,
+                "Minute": 0,
+                "Date": "Fr 10.Jan",
+                "Time": "16:00",
+                "Text": "Seniorenchorprobe in Leonberg"
+              },
+              {
+                "Tag": 10,
+                "Monat": 2,
+                "Jahr": 2020,
+                "Stunde": 20,
+                "Minute": 0,
+                "Date": "Fr 10.Jan",
+                "Time": "20:00",
+                "Text": "Jugendabend"
+              },
+              {
+                "Tag": 11,
+                "Monat": 2,
+                "Jahr": 2020,
+                "Stunde": 20,
+                "Minute": 0,
+                "Date": "Sa 11.Jan",
+                "Time": "20:00",
+                "Text": "Chorprobe in Ditzingen"
+              },
+              {
+                "Tag": 12,
+                "Monat": 2,
+                "Jahr": 2020,
+                "Stunde": 15,
+                "Minute": 0,
+                "Date": "So 12.Jan",
+                "Time": "15:00",
+                "Text": "Seniorentreffen"
+              },
+              {
+                "Tag": 13,
+                "Monat": 2,
+                "Jahr": 2020,
+                "Stunde": 20,
+                "Minute": 0,
+                "Date": "Mo 13.Jan",
+                "Time": "20:00",
+                "Text": "Gottesdienst in Ditzingen mit Bischof Bornhäußer Predigtgrundlage: 1. Mose 9,12-13"
+              },
+              {
+                "Tag": 15,
+                "Monat": 2,
+                "Jahr": 2020,
+                "Stunde": 10,
+                "Minute": 30,
+                "Date": "Mi 15.Jan",
+                "Time": "10:30",
+                "Text": "Jugendchorprobe in Fellbach"
+              },
+              {
+                "Tag": 16,
+                "Monat": 2,
+                "Jahr": 2020,
+                "Stunde": 9,
+                "Minute": 30,
+                "Date": "Do 16.Jan",
+                "Time": "09:30",
+                "Text": "Gottesdienst Predigtgrundlage: Galater 5, 14 Sonntags- und Vorsonntagsschule"
+              },
+              {
+                "Tag": 16,
+                "Monat": 2,
+                "Jahr": 2020,
+                "Stunde": 10,
+                "Minute": 0,
+                "Date": "Do 16.Jan",
+                "Time": "10:00",
+                "Text": "Jugendgottesdienst mit Apostel Loy in Fellbach"
+              },
+              {
+                "Tag": 18,
+                "Monat": 2,
+                "Jahr": 2020,
+                "Stunde": 20,
+                "Minute": 0,
+                "Date": "Sa 18.Jan",
+                "Time": "20:00",
+                "Text": "Chorprobe"
+              },
+              {
+                "Tag": 20,
+                "Monat": 2,
+                "Jahr": 2020,
+                "Stunde": 20,
+                "Minute": "00",
+                "Date": "Mo 20.Jan",
+                "Time": "20:00",
+                "Text": "Gottesdienst Predigtgrundlage:Römer 2, 4 Zum Gottesdienst ist die Gemeinde Ditzingen eingeladen"
+              },
+              {
+                "Tag": 21,
+                "Monat": 2,
+                "Jahr": 2020,
+                "Stunde": 19,
+                "Minute": "00",
+                "Date": "Di 21.Jan",
+                "Time": "19:00",
+                "Text": "Probe der NAKaronies in Leonberg"
+              },
+              {
+                "Tag": 23,
+                "Monat": 2,
+                "Jahr": 2020,
+                "Stunde": 9,
+                "Minute": 30,
+                "Date": "Do 23.Jan",
+                "Time": "09:30",
+                "Text": "Gottesdienst Predigtgrundlage: Matthäus 5, 44.45 Sonntags- und Vorsonntagsschule"
+              },
+              {
+                "Tag": 24,
+                "Monat": 2,
+                "Jahr": 2020,
+                "Stunde": 18,
+                "Minute": "00",
+                "Date": "Fr 24.Jan",
+                "Time": "18:00",
+                "Text": "Trauergesprächskreis in S-Zuffenhausen. Voranmeldung unter 07151/82380 oder 07234/1730"
+              },
+              {
+                "Tag": 25,
+                "Monat": 2,
+                "Jahr": 2020,
+                "Stunde": 14,
+                "Minute": "00",
+                "Date": "Sa 25.Jan",
+                "Time": "14:00",
+                "Text": "Seniorenwandern"
+              },
+              {
+                "Tag": 25,
+                "Monat": 2,
+                "Jahr": 2020,
+                "Stunde": 15,
+                "Minute": "00",
+                "Date": "Sa 25.Jan",
+                "Time": "15:00",
+                "Text": "Seniorenwandern und Blutspendeaktion bis 18:30 Uhr"
+              },
+              {
+                "Tag": 27,
+                "Monat": 2,
+                "Jahr": 2020,
+                "Stunde": 20,
+                "Minute": "00",
+                "Date": "Mo 27.Jan",
+                "Time": "20:00",
+                "Text": "Gottesdienst mit Apostel Loy, zum Gottesdienst ist die Gemeinde Ditzingen eingeladen."
+              }
+            ]
       },
       "templates": {
         "body": {
@@ -234,6 +269,9 @@
               "items": {
                 "{{#each Termine}}": {
                   "type": "horizontal",
+                  "href": {
+                    "url": "https://raw.githubusercontent.com/tseiffert/GemeindeInfoGerlingen/master/TerminTest.ics"
+                  },
                   "style": {
                     "padding": "5",
                     "spacing": "5"
@@ -242,17 +280,19 @@
                     {
                       "type": "label",
                       "class": "label_class",
-                      "text": "{{$root.GetDays(Tag,Monat,Stunde,Minute)}}",
+                      "text": "{{Date}}",
                       "style": {
                         "width": "20%",
                         "color": "{{$root.GetColour(Tag,Monat,Stunde,Minute)}}"
+                      },
+                      "href": {
+                        "url": "https://raw.githubusercontent.com/tseiffert/GemeindeInfoGerlingen/master/TerminTest.ics"
                       }
                     },
-                    
                     {
                       "type": "label",
                       "class": "label_class",
-                      "text": "{{$root.GetHours(Stunde,Minute)}}",
+                      "text": "{{Time}}",
                       "style": {
                         "width": "20%",
                         "color": "{{$root.GetColour(Tag,Monat,Stunde,Minute)}}"
@@ -264,7 +304,10 @@
                       "text": "{{Text}}",
                       "style": {
                         "width": "50%",
-                        "color": "{{$root.GetColour(Tag,Monat,Stunde,Minute)}}"
+                        "color": "{{$root.GetColour(Tag,Monat,Stunde,Minute)}}",
+                      },
+                      "href": {
+                        "url": "https://raw.githubusercontent.com/tseiffert/GemeindeInfoGerlingen/master/TerminTest.ics"
                       }
                     }
                   ]

@@ -82,6 +82,8 @@
 		C4BB678A23C92AB300FA501E /* Telefon.json in Resources */ = {isa = PBXBuildFile; fileRef = C4BB678923C92AB300FA501E /* Telefon.json */; };
 		C4BB679923D4B11C00FA501E /* JavaDemo.json in Resources */ = {isa = PBXBuildFile; fileRef = C4BB679823D4B11C00FA501E /* JavaDemo.json */; };
 		C4E19B7323E2211D00C18C6E /* 2020_02_Gerlingen.csv in Resources */ = {isa = PBXBuildFile; fileRef = C4E19B7223E2211D00C18C6E /* 2020_02_Gerlingen.csv */; };
+		C4E19B7923E74EEA00C18C6E /* JavaDemo Kopie.json in Resources */ = {isa = PBXBuildFile; fileRef = C4E19B7823E74EEA00C18C6E /* JavaDemo Kopie.json */; };
+		C4E19B7B23E8CDD100C18C6E /* Download.js in Resources */ = {isa = PBXBuildFile; fileRef = C4E19B7A23E8CDD100C18C6E /* Download.js */; };
 		C4E688AD23DA4E76007146C8 /* DateTool.js in Resources */ = {isa = PBXBuildFile; fileRef = C4E688AC23DA4E76007146C8 /* DateTool.js */; };
 		EF8C8D001F9195240062CA1C /* JasonSwitchComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = EF8C8CFF1F9195240062CA1C /* JasonSwitchComponent.m */; };
 		F9283F33AA628489204A4867 /* Pods_Jasonette.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F0FCC971E030AF932E421D4 /* Pods_Jasonette.framework */; };
@@ -226,6 +228,8 @@
 		C4BB678923C92AB300FA501E /* Telefon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Telefon.json; path = "../../../jasonette-iOS-master/app/Telefon.json"; sourceTree = "<group>"; };
 		C4BB679823D4B11C00FA501E /* JavaDemo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = JavaDemo.json; sourceTree = "<group>"; };
 		C4E19B7223E2211D00C18C6E /* 2020_02_Gerlingen.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 2020_02_Gerlingen.csv; sourceTree = "<group>"; };
+		C4E19B7823E74EEA00C18C6E /* JavaDemo Kopie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "JavaDemo Kopie.json"; path = "../../../jasonette-iOS-master/app/Jasonette/JavaDemo Kopie.json"; sourceTree = "<group>"; };
+		C4E19B7A23E8CDD100C18C6E /* Download.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = Download.js; path = "../../../jasonette-iOS-master/app/Jasonette/Download.js"; sourceTree = "<group>"; };
 		C4E688AC23DA4E76007146C8 /* DateTool.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = DateTool.js; path = "../../../jasonette-iOS-master/app/Jasonette/DateTool.js"; sourceTree = "<group>"; };
 		EF8C8CFE1F9195240062CA1C /* JasonSwitchComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JasonSwitchComponent.h; sourceTree = "<group>"; };
 		EF8C8CFF1F9195240062CA1C /* JasonSwitchComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JasonSwitchComponent.m; sourceTree = "<group>"; };
@@ -640,6 +644,7 @@
 		5E3177AC1D1F2A8200D87778 /* file:// */ = {
 			isa = PBXGroup;
 			children = (
+				C4E19B7823E74EEA00C18C6E /* JavaDemo Kopie.json */,
 				C4E19B7223E2211D00C18C6E /* 2020_02_Gerlingen.csv */,
 				C4BB678923C92AB300FA501E /* Telefon.json */,
 				C4BB678223BFCE8900FA501E /* TemplateJSON.json */,
@@ -648,6 +653,7 @@
 				045C77EA1F02791D00F06598 /* error.json */,
 				C4BB679823D4B11C00FA501E /* JavaDemo.json */,
 				C4E688AC23DA4E76007146C8 /* DateTool.js */,
+				C4E19B7A23E8CDD100C18C6E /* Download.js */,
 			);
 			name = "file://";
 			sourceTree = "<group>";
@@ -880,6 +886,7 @@
 				C4BB679923D4B11C00FA501E /* JavaDemo.json in Resources */,
 				5E31777A1D1E4A8E00D87778 /* settings.plist in Resources */,
 				5E3177251D1E411F00D87778 /* JasonHorizontalSectionItem.xib in Resources */,
+				C4E19B7B23E8CDD100C18C6E /* Download.js in Resources */,
 				C4BB678323BFCE8900FA501E /* TemplateJSON.json in Resources */,
 				045E093A1FC5F98A003A6341 /* xhtml.js in Resources */,
 				C4E19B7323E2211D00C18C6E /* 2020_02_Gerlingen.csv in Resources */,
@@ -888,6 +895,7 @@
 				5E3177481D1E411F00D87778 /* LaunchScreen.storyboard in Resources */,
 				045C77E91F0278EA00F06598 /* preload.json in Resources */,
 				045C77EB1F02791D00F06598 /* error.json in Resources */,
+				C4E19B7923E74EEA00C18C6E /* JavaDemo Kopie.json in Resources */,
 				C4E688AD23DA4E76007146C8 /* DateTool.js in Resources */,
 				04C851961FE62812000B0B94 /* st.js in Resources */,
 				C4BB678A23C92AB300FA501E /* Telefon.json in Resources */,
