@@ -32,6 +32,9 @@
                 "text": "var today = function() {return today = ((new Date())/1000/60/60/24); }"
               },
               {
+              "description": "{{var now = new Date(); var then = new Date(now.getTime()+5*60000); then = then.toISOString(); return then;}}"
+              },
+              {
                 "text": "var MakeDateOK = function(date) {return date; }"
               },
               {
